@@ -1,5 +1,0 @@
-{
-  "realm" : "demo",
-  "auth-server-url" : "http://sso.hsichin.com/auth",
-  "resource" : "js-console"
-}

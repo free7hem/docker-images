@@ -1,44 +1,60 @@
-dn: ou=People,dc=hsichin,dc=org
+dn: ou=People,dc=example,dc=org
 objectclass: top
 objectclass: organizationalUnit
 ou: People
 
-dn: ou=RealmRoles,dc=hsichin,dc=org
+dn: ou=RealmRoles,dc=example,dc=org
 objectclass: top
 objectclass: organizationalUnit
 ou: RealmRoles
 
-dn: uid=changkawu,ou=People,dc=hsichin,dc=org
+dn: uid=jbrown,ou=People,dc=example,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-uid: changkawu
-cn: Kawu
-sn: Chang
+uid: jbrown
+cn: James
+sn: Brown
+mail: jbrown@keycloak.org
+userPassword: password
+
+dn: uid=ccheung,ou=People,dc=example,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+uid: ccheung
+cn: Camus
+sn: Cheung
 mail: free7hem@gmail.com
 userPassword: password
 
-dn: uid=hcheung,ou=People,dc=hsichin,dc=org
+dn: uid=bwilson,ou=People,dc=example,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-uid: hcheung
-cn: Hsichin
-sn: Cheung
-mail: hsichinhiker@gmail.com
+uid: bwilson
+cn: Bruce
+sn: Wilson
+mail: bwilson@keycloak.org
+postalCode: 88441
+postalCode: 77332
+postalCode: 66221
+street: Elm 5
 userPassword: password
 
-dn: cn=ldap-user,ou=RealmRoles,dc=hsichin,dc=org
+dn: cn=ldap-user,ou=RealmRoles,dc=example,dc=org
 objectclass: top
 objectclass: groupOfNames
 cn: ldap-user
-member: uid=ccheung,ou=People,dc=hsichin,dc=org
-member: uid=hcheung,ou=People,dc=hsichin,dc=org
+member: uid=jbrown,ou=People,dc=example,dc=org
+member: uid=bwilson,ou=People,dc=example,dc=org
+member: uid=ccheung,ou=People,dc=example,dc=org
 
-dn: cn=ldap-admin,ou=RealmRoles,dc=hsichin,dc=org
+dn: cn=ldap-admin,ou=RealmRoles,dc=example,dc=org
 objectclass: top
 objectclass: groupOfNames
 cn: ldap-admin
-member: uid=ccheung,ou=People,dc=hsichin,dc=org
+member: uid=jbrown,ou=People,dc=example,dc=org

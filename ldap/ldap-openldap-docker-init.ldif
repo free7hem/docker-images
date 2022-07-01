@@ -1,0 +1,44 @@
+dn: ou=People,dc=hsichin,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: People
+
+dn: ou=RealmRoles,dc=hsichin,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: RealmRoles
+
+dn: uid=changkawu,ou=People,dc=hsichin,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+uid: changkawu
+cn: Kawu
+sn: Chang
+mail: free7hem@gmail.com
+userPassword: password
+
+dn: uid=hcheung,ou=People,dc=hsichin,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+uid: hcheung
+cn: Hsichin
+sn: Cheung
+mail: hsichinhiker@gmail.com
+userPassword: password
+
+dn: cn=ldap-user,ou=RealmRoles,dc=hsichin,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: ldap-user
+member: uid=ccheung,ou=People,dc=hsichin,dc=org
+member: uid=hcheung,ou=People,dc=hsichin,dc=org
+
+dn: cn=ldap-admin,ou=RealmRoles,dc=hsichin,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: ldap-admin
+member: uid=ccheung,ou=People,dc=hsichin,dc=org
